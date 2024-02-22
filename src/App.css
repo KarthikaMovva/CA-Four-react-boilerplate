@@ -1,12 +1,12 @@
-.body{
+ .body{                                 /* styling my quiz questions */
 background-color: aquamarine;
 height: 100vh;
 width: 100%;
 background-size: cover;
 }
 .displaybox{
-    height: 60vh;
-    width: 150vh;
+    height: 60%;
+    width: 70%;
     border: 1px solid white;
     position: absolute;
     top: 15%;
@@ -33,9 +33,9 @@ background-size: cover;
 
 .questionnumber{
     background-color: white;
-    display: flex;
-    justify-content: center;
-    font-weight: 800;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 5%;
 }
 .question{
     background-color: white;
@@ -45,14 +45,17 @@ background-size: cover;
     font-weight: 500;
 }
 .option{
-    background-color: rgb(185, 181, 181);
-    height: 30px;
-    width: 120vh;
+    background-color: rgb(219, 215, 215);
+    height: 6%;
+    width: 80%;
     text-align: center;
     margin-bottom: 20px;
     margin-left: 10%;
     border-radius: 5px;
     cursor: pointer;
+}
+.option:hover{
+    background-color: rgb(145, 225, 182);
 }
 
 .highlight{
@@ -75,9 +78,9 @@ background-size: cover;
     cursor: pointer;
     border-radius: 5px;
 }
-.body1{
-   height: 500px;
-   width: 600px;
+.body1{      /*styling to popup*/
+   height: 70%;
+   width: 40%;
    background-color: white;
    position: fixed;
    left: 30%;
@@ -105,10 +108,20 @@ background-size: cover;
     text-align: center;
     font-weight: 400;
 }
-@media screen and (max-width: 600px){
+.retake{
+ margin-left: 46%;
+ padding: 10px;
+ background-color: rgb(39, 131, 100);
+ border: 1px solid rgb(39, 131, 100);
+ border-radius: 5px;
+ color: white;
+ cursor: pointer;
+  
+}
+@media screen and (max-width: 700px){    /*making the design responsive*/
     .body{
-        height: 1000vh;
-        width: 1000vh;
+        height: 100vh;
+        width: 100%;
     }
     .displaybox{
         height: 60vh;
@@ -116,38 +129,27 @@ background-size: cover;
     }
     .option{
         width: 60vw;
-        font-size: 12px;
+        font-size: 10px;
     }
     .highlight{
         right: 3%;
-        padding: 5px 10px;
+        padding: 1px 3px;
     }
     .nohighlight{
-        padding: 5px 10px;
+        padding: 1px 3px;
     }
     .question{
         font-size: 10px;
     }
     .body1{
-       left: 3%;
-       top: 5%;
-       width: 80vw;
-       height: 60vh;
-       padding-top: 5px;
+       left: 7%;
+       top: 10%;
+   height: 85%;
+   width: 70%;
     }
     .switchbackground{
         top: 1%;
         right: 2%;
     }
 }
-@media screen and (min-width: 700px) and (max-width: 1024px){
-    .body{
-        height: 3000px;
-    }
-    .logo{
-        font-size: 30px;
-    }
-    .body1{
-        left: 5%;
-    }
-}
+
